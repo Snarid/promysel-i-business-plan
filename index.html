@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>«Промысел-И» — бизнес-план системы автоматизации подготовки нефти, газа и конденсата</title>
+<meta name="description" content="Бизнес-план интеллектуальной АСУ ТП «Промысел-И» для установок подготовки нефти, газа и конденсата. Проект в контуре ПАО «Газпром автоматизация», пилот — УКПГ-2 Ковыктинского ГКМ. Автор — Корытов Фёдор Андреевич.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B5CAD'/%3E%3Cpath d='M9 24V8h8a5 5 0 010 10h-8' stroke='white' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">«Промысел-И» <span>·</span> бизнес-план</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#world">Мировой опыт</a><a href="#ga">Газпром автоматизация</a><a href="#product">Продукт</a><a href="#pilot">Ковыкта</a><a href="#market">Рынок</a><a href="#go">Выход на рынок</a><a href="#finance">Финансы</a><a href="#risks">Риски</a>
+    </nav>
+    <a class="dl" href="Biznes-plan_Promysel-I_Korytov.docx" download>Скачать DOCX</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <img src="assets/hero.webp" alt="Установка подготовки газа в зимней сибирской тайге в сумерках" width="1920" height="1280" fetchpriority="high">
+  <div class="wrap">
+    <div class="eyebrow">Бизнес-план · проект ПАО «Газпром автоматизация» · 2027–2033</div>
+    <h1>Интеллектуальная АСУ ТП подготовки нефти, газа и конденсата</h1>
+    <p class="lead">«Промысел-И» — отечественный программно-технический комплекс и набор интеллектуальных модулей (СУУТП, цифровой двойник, оптимизация ингибитора, предиктивная диагностика) для УКПГ, УПН и установок стабилизации конденсата. Пилот — УКПГ-2 Ковыктинского ГКМ.</p>
+    <div class="kpis" role="list">
+      <div class="kpi" role="listitem"><b id="k-inv">480</b><small>млн руб. — инвестиции 2027–2028</small></div>
+      <div class="kpi" role="listitem"><b id="k-npv">374</b><small>млн руб. — NPV при ставке 20%</small></div>
+      <div class="kpi" role="listitem"><b id="k-irr">34,9%</b><small>IRR проекта</small></div>
+      <div class="kpi" role="listitem"><b id="k-dpp">5,6</b><small>лет — дисконтированный срок окупаемости</small></div>
+    </div>
+    <p class="author">Автор проекта — Корытов Фёдор Андреевич, старший мастер по подготовке газа, ООО «Газпром добыча Иркутск»</p>
+  </div>
+</section>
+
+<section class="s" id="idea">
+  <div class="wrap">
+    <div class="s-head"><div class="s-num">01 / ИДЕЯ</div><div><h2>От «автоматизации исполнения» к управлению с оптимизацией</h2>
+      <p>Базовые АСУ ТП на промыслах Газпрома уже работают на российских ПТС. Следующий шаг — интеллектуальный контур поверх них: модели, которые удерживают оптимальный режим, экономят ингибитор и предупреждают отказы.</p></div></div>
+    <div class="body">
+      <p>За последние 20 лет системы управления газовых промыслов прошли путь от локальных САУ исполнительных механизмов к централизованным системам, обеспечивающим работу месторождения в автоматическом режиме с минимальным участием персонала<a class="cite" href="#r1">[1]</a>. УКПГ-2 Ковыктинского ГКМ стала первым в России объектом, системы управления которого внедрены без западных операционных систем<a class="cite" href="#r3">[3]</a>. При этом на промыслах по-прежнему многое решает оператор: подача метанола задаётся «с запасом», режим НТС корректируется вручную, а ремонт ГПА планируется по регламенту, а не по фактическому состоянию.</p>
+      <p>Проект предлагает вывести на рынок в контуре ПАО «Газпром автоматизация» продуктовую линейку «Промысел-И» — продолжение линии АСУ ТП «Промысел 1», первой в истории Газпрома отечественной АСУ ТП газового промысла<a class="cite" href="#r1">[1]</a>. Продукт продаётся как надстройка к существующим системам и как полный ПАК для нового строительства и миграции.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="world">
+  <div class="wrap">
+    <div class="s-head"><div class="s-num">02 / МИРОВОЙ ОПЫТ</div><div><h2>Реализованные проекты мировых лидеров</h2>
+      <p>Интегрированные системы управления и безопасности (ICSS), цифровые двойники и ИИ-оптимизация стали стандартом крупных проектов подготовки углеводородов.</p></div></div>
+    <div class="cases">
+      <article class="case w3"><div class="tag">Yokogawa · Россия, Ямал</div><h4>Ямал СПГ</h4><p>Поставка ICSS: РСУ CENTUM VP, ПАЗ ProSafe-RS, система управления производственной информацией, диагностика оборудования PRM и тренажёры операторов<a class="cite" href="#r8">[8]</a>.</p><div class="fig">16,5 млн т/год<small>проектная мощность завода СПГ</small></div></article>
+      <article class="case w3"><div class="tag">Emerson · Азербайджан, Каспий</div><h4>Шах-Дениз-2</h4><p>Главный подрядчик по автоматизации: DeltaV, DeltaV SIS и предиктивная диагностика AMS для двух платформ и терминала Сангачал<a class="cite" href="#r9">[9]</a>. Добыча стартовала более чем на 4 месяца раньше графика<a class="cite" href="#r10">[10]</a>.</p><div class="fig">48 млн $<small>стоимость контракта на автоматизацию</small></div></article>
+      <article class="case w2"><div class="tag">ABB · Норвегия</div><h4>Aasta Hansteen</h4><p>Интегрированные системы на базе 800xA, мониторинг 100 000 состояний 4 000 единиц оборудования<a class="cite" href="#r12">[12]</a>.</p><div class="fig">−98%<small>ручных вмешательств при пусконаладке</small></div></article>
+      <article class="case w2"><div class="tag">Saudi Aramco</div><h4>Абкайк — стабилизация нефти</h4><p>Модель машинного обучения на 1,7 млрд точек данных одновременно оптимизирует 18 установок стабилизации<a class="cite" href="#r13">[13]</a>.</p><div class="fig">−31,8%<small>углеродоёмкость, 2019–2022</small></div></article>
+      <article class="case w2"><div class="tag">Emerson · BP, 2026</div><h4>Shah Deniz Compression</h4><p>DeltaV и DeltaV SIS для необслуживаемой платформы с дистанционным управлением с берега<a class="cite" href="#r11">[11]</a>.</p><div class="fig">2,9 млрд $<small>стоимость проекта</small></div></article>
+    </div>
+    <div class="body" style="margin-top:28px"><p>Общий вывод: ценность создаётся не контроллером, а связкой «надёжная РСУ/ПАЗ + цифровые модели + сервис». Именно эту связку проект воспроизводит на отечественной базе.</p></div>
+  </div>
+</section>
+
+<section class="s" id="ga">
+  <div class="wrap">
+    <div class="s-head"><div class="s-num">03 / ГАЗПРОМ АВТОМАТИЗАЦИЯ</div><div><h2>База проекта — лидер российского рынка АСУ ТП</h2>
+      <p>Проект реализуется внутри компании: используются её ПТС, производственные площадки, референции и доступ к объектам Группы Газпром.</p></div></div>
+    <div class="ga">
+      <div>
+        <ul class="tl">
+          <li><span class="yr">1960</span><p>Создано СКБ «Газприборавтоматика» — первая специализированная организация по системам автоматики и телемеханики газопроводов<a class="cite" href="#r2">[2]</a>.</p></li>
+          <li><span class="yr">2011</span><p>ОАО «Газавтоматика» переименовано в ОАО «Газпром автоматизация»<a class="cite" href="#r2">[2]</a>.</p></li>
+          <li><span class="yr">2014</span><p>Старт перевода систем управления с импортных ПТС на полностью российскую элементную базу<a class="cite" href="#r2">[2]</a>.</p></li>
+          <li><span class="yr">2022</span><p>Ввод систем на российских ПТС на Бованенковском, Ковыктинском и Чаяндинском месторождениях<a class="cite" href="#r2">[2]</a>; аккредитация как ИТ-компании<a class="cite" href="#r1">[1]</a>.</p></li>
+          <li><span class="yr">2025</span><p>Выручка 42,6 млрд руб., доля российского рынка АСУ ТП — 23,1%<a class="cite" href="#r5">[5]</a>.</p></li>
+          <li><span class="yr">2030</span><p>Цель — оборот 47,6 млрд руб., удвоение выручки в автоматизации до 12,3 млрд руб., 80% российских компонентов<a class="cite" href="#r4">[4]</a>.</p></li>
+        </ul>
+        <div class="products">
+          <div class="prod"><b>«Промысел 1»</b><p>Первая отечественная АСУ ТП газового промысла (УКПГ Юбилейного ГМ)<a class="cite" href="#r1">[1]</a>.</p></div>
+          <div class="prod"><b>ПТК «Поток-ДУ», «Горизонт»</b><p>Комплексы для систем оперативно-диспетчерского управления дочерних обществ добычи и транспорта газа<a class="cite" href="#r3">[3]</a>.</p></div>
+          <div class="prod"><b>СУМП ТДА</b><p>Система управления магнитным подвесом турбодетандера, серийно с 2022 г. на Бованенковском НГКМ<a class="cite" href="#r3">[3]</a>.</p></div>
+        </div>
+      </div>
+      <div>
+        <figure class="ga-fig"><img src="assets/control.webp" alt="Операторная газового промысла с мониторами мнемосхем" loading="lazy" width="1920" height="1280"></figure>
+        <div class="stats">
+          <div class="stat"><b>500+</b><span>систем создано и реконструировано<a class="cite" href="#r1">[1]</a></span></div>
+          <div class="stat"><b>52</b><span>УКПГ и УППГ с системами компании<a class="cite" href="#r1">[1]</a></span></div>
+          <div class="stat"><b>23,1%</b><span>доля рынка АСУ ТП РФ, 2025<a class="cite" href="#r5">[5]</a></span></div>
+          <div class="stat"><b>12,3</b><span>млрд руб. — цель по автоматизации к 2030<a class="cite" href="#r4">[4]</a></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="product">
+  <div class="wrap">
+    <div class="s-head"><div class="s-num">04 / ПРОДУКТ</div><div><h2>«Промысел-И»: линейка модулей и стоимость</h2>
+      <p>Модульная архитектура: заказчик начинает с аудита и одного модуля, затем расширяет контур. Цены — ориентировочные, без НДС (оценка автора).</p></div></div>
+
+    <div class="hmi" aria-label="Демонстрационная мнемосхема">
+      <div class="hmi-bar"><span>УКПГ-2 · НИТКА 1 · ДЕМО-РЕЖИМ <span class="t" id="clock"></span></span>
+        <div class="sw" role="group" aria-label="Режим управления">
+          <button type="button" id="b-man" aria-pressed="true">Ручной режим</button>
+          <button type="button" id="b-apc" aria-pressed="false">СУУТП «Промысел-И»</button>
+        </div></div>
+      <div class="hmi-grid">
+        <svg viewBox="0 0 760 360" role="img" aria-label="Упрощённая мнемосхема: входной сепаратор, теплообменник, дроссель, низкотемпературный сепаратор, подача метанола">
+          <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6E8BA5"/></marker></defs>
+          <g stroke="#6E8BA5" stroke-width="2.5" fill="none">
+            <path d="M20 150H90" marker-end="url(#ar)"/><path d="M150 150H230" marker-end="url(#ar)"/><path d="M320 150H400" marker-end="url(#ar)"/>
+            <path d="M440 150H520" marker-end="url(#ar)"/><path d="M580 120V60H275V120" marker-end="url(#ar)"/><path d="M275 180V230H740" marker-end="url(#ar)"/>
+            <path d="M120 200V300H200" marker-end="url(#ar)"/><path d="M550 200V300H470" marker-end="url(#ar)"/>
+          </g>
+          <path d="M60 90V140" stroke="#E0A040" stroke-width="2" stroke-dasharray="5 4" fill="none" marker-end="url(#ar)"/>
+          <path d="M380 90V140" stroke="#E0A040" stroke-width="2" stroke-dasharray="5 4" fill="none" marker-end="url(#ar)"/>
+          <g fill="#1A2A3A" stroke="#9CC3EA" stroke-width="1.6">
+            <rect x="90" y="100" width="60" height="100" rx="28"/><rect x="230" y="120" width="90" height="60" rx="6"/>
+            <path d="M400 135L440 165V135L400 165Z"/><rect x="520" y="100" width="60" height="100" rx="28"/>
+            <rect x="200" y="280" width="90" height="40" rx="4"/><rect x="380" y="280" width="90" height="40" rx="4"/>
+          </g>
+          <g font-family="JetBrains Mono,monospace" font-size="12" fill="#8FA6BA">
+            <text x="86" y="92">С-1</text><text x="275" y="155" text-anchor="middle">Т-1</text><text x="396" y="125">Др</text><text x="516" y="92">С-2 (НТС)</text>
+            <text x="205" y="340">разделитель</text><text x="382" y="340">разделитель</text><text x="8" y="172">сырой газ</text><text x="640" y="222">товарный газ</text>
+            <text x="20" y="80">CH₃OH</text><text x="356" y="80">CH₃OH</text>
+          </g>
+          <g font-family="JetBrains Mono,monospace" font-size="13" font-weight="600">
+            <rect x="160" y="190" width="104" height="26" rx="3" fill="#0E1620" stroke="#2C4256"/><text x="168" y="208" fill="#D7E2EC" id="v-p1">P 10,8 МПа</text>
+            <rect x="440" y="230" width="112" height="26" rx="3" fill="#0E1620" stroke="#2C4256" transform="translate(0,-40)"/><text x="448" y="208" fill="#D7E2EC" id="v-t2">T −24,6 °C</text>
+            <rect x="590" y="100" width="150" height="26" rx="3" fill="#0E1620" stroke="#2C4256"/><text x="598" y="118" fill="#D7E2EC" id="v-dew">ТТРв −20,4 °C</text>
+            <rect x="96" y="40" width="150" height="26" rx="3" fill="#0E1620" stroke="#2C4256"/><text x="104" y="58" fill="#E0A040" id="v-meoh">MeOH 412 кг/ч</text>
+          </g>
+          <g id="apc-badge" opacity="0"><rect x="590" y="300" width="150" height="34" rx="4" fill="#0B5CAD"/><text x="602" y="322" font-family="JetBrains Mono,monospace" font-size="12" fill="#fff">СУУТП: АКТИВНА</text></g>
+        </svg>
+        <aside class="hmi-side">
+          <div class="tile"><small>Расход метанола</small><b id="t-meoh">412</b> <span class="mono">кг/ч</span><span class="d" id="d-meoh"></span></div>
+          <div class="tile"><small>Отклонение T НТС от уставки</small><b id="t-dev">±1,8</b> <span class="mono">°C</span><span class="d" id="d-dev"></span></div>
+          <div class="tile"><small>Запас до гидратообразования</small><b id="t-hyd">6,2</b> <span class="mono">°C</span></div>
+          <div class="alarms-w"><small class="mono" style="color:#8FA6BA;font-size:11px">Журнал событий</small><div class="alarms" id="log" aria-live="polite"></div></div>
+        </aside>
+      </div>
+      <div class="trend"><canvas id="trend" aria-label="Тренд температуры НТС" role="img"></canvas></div>
+    </div>
+    <p class="src" style="margin-top:8px">Демонстрационная модель с условными значениями — иллюстрирует принцип работы модулей М1 и М2, а не фактический режим объекта.</p>
+
+    <div class="mods" style="margin-top:36px">
+      <article class="mod big"><div class="code">ПАКЕТ «КОМПЛЕКС» · М1 + М2 + М3</div><h4>Интеллектуальный контур для действующей УКПГ</h4><p>Подключается к существующей РСУ через защищённый шлюз, без изменения технологической схемы. Работает в советующем режиме, затем — в режиме управления уставками с ограничениями ПАЗ.</p><div class="price">от 205 млн руб. за объект</div></article>
+      <article class="mod"><div class="code">А0</div><h4>Аудит АСУ ТП</h4><p>Обследование, оценка потенциала, ТЗ на модули.</p><div class="price">от 4,5 млн руб.</div></article>
+      <article class="mod"><div class="code">М1</div><h4>СУУТП (APC)</h4><p>Многосвязное прогнозирующее управление НТС, стабилизацией конденсата и регенерацией метанола.</p><div class="price">от 110 млн руб.</div></article>
+      <article class="mod"><div class="code">М2</div><h4>Цифровой двойник и оптимизация ингибитора</h4><p>Расчёт равновесия гидратообразования в реальном времени, адресная подача метанола.</p><div class="price">от 55 млн руб.</div></article>
+      <article class="mod"><div class="code">М3</div><h4>Предиктивная диагностика</h4><p>Состояние ГПА ДКС, насосов, АВО; ремонт по фактическому состоянию.</p><div class="price">от 60 млн руб.</div></article>
+      <article class="mod"><div class="code">ПАК</div><h4>Базовый ПАК РСУ / ПАЗ / СОиГ</h4><p>Для нового строительства и миграции с импортных ПТС, соответствие 187-ФЗ.</p><div class="price">от 420 млн руб.</div></article>
+      <article class="mod"><div class="code">КТК</div><h4>Тренажёрный комплекс</h4><p>Обучение операторов на цифровом двойнике установки.</p><div class="price">от 55 млн руб.</div></article>
+      <article class="mod"><div class="code">SLA</div><h4>Сервис 24/7</h4><p>Сопровождение моделей, обновления, удалённый мониторинг.</p><div class="price">2,0 млн руб./мес</div></article>
+    </div>
+    <figure class="figure"><img src="assets/architecture.png" alt="Архитектура системы: уровни 0–4" loading="lazy" width="1215" height="870"><figcaption>Архитектура «Промысел-И»: интеллектуальный контур (уровень 4) поверх отечественных РСУ/ПАЗ и ПТК диспетчерского управления.</figcaption></figure>
+
+    <h3>Конкурентное сравнение</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Критерий</th><th>«Промысел-И»</th><th>Yokogawa / Emerson / ABB</th><th>Российские разработчики ПЛК и РСУ</th></tr></thead>
+      <tbody>
+        <tr><td>Соответствие требованию 187-ФЗ об отечественной АСУ ТП на ЗОКИИ к 2030 г.<a class="cite" href="#r6">[6]</a></td><td class="yes">Да</td><td class="no">Нет</td><td class="yes">Да</td></tr>
+        <tr><td>Опыт АСУ ТП на УКПГ Группы Газпром</td><td class="yes">52 УКПГ/УППГ<a class="cite" href="#r1">[1]</a></td><td class="mid">Частично</td><td class="mid">Ограничен</td></tr>
+        <tr><td>Интеллектуальные модули (APC, двойник, диагностика)</td><td class="yes">В составе линейки</td><td class="yes">Зрелые</td><td class="no">Как правило, нет</td></tr>
+        <tr><td>Полный комплект РСУ + ПАЗ для крупных объектов</td><td class="yes">Да (ПТС компании)</td><td class="yes">Да</td><td class="mid">Не у всех<a class="cite" href="#r6">[6]</a></td></tr>
+        <tr><td>Сервис и выезд на объект в Восточной Сибири</td><td class="yes">Собственный</td><td class="no">Ограничен</td><td class="mid">Через партнёров</td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+
+<section class="s" id="pilot">
+  <div class="wrap">
+    <div class="s-head"><div class="s-num">05 / ПИЛОТ</div><div><h2>УКПГ-2 Ковыктинского ГКМ</h2>
+      <p>Самое крупное месторождение Восточной Сибири, ресурсная база «Силы Сибири». Установка выбрана как опорный объект: здесь сходятся газ, конденсат и метанол.</p></div></div>
+    <div class="body">
+      <p>Месторождение расположено в 450 км к северо-востоку от Иркутска, в Жигаловском и Казачинско-Ленском районах; климат резко континентальный, местами многолетняя мерзлота<a class="cite" href="#r15">[15]</a>. УКПГ-2 — первая из четырёх установок, мощностью 6,9 млрд м³ газа в год; на ней размещены центральная ДКС, установки стабилизации конденсата и регенерации метанола, которые принимают продукты с остальных УКПГ<a class="cite" href="#r14">[14]</a>. Подготовка ведётся методом низкотемпературной сепарации<a class="cite" href="#r16">[16]</a>, а стабилизация конденсата — в ректификационной колонне с парциальным дефлегматором<a class="cite" href="#r17">[17]</a>.</p>
+    </div>
+    <figure class="figure"><img src="assets/kovykta.png" alt="Условная схема технологической цепочки УКПГ-2 и точки подключения модулей М1–М3" loading="lazy" width="1340" height="740"><figcaption>Условная схема: где подключаются модули М1 (СУУТП), М2 (оптимизация ингибитора) и М3 (диагностика ДКС).</figcaption></figure>
+    <h3>Целевые показатели пилота (оценка автора, подтверждаются на ПСИ)</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Показатель</th><th class="n">Цель</th><th>Чем достигается</th></tr></thead>
+      <tbody>
+        <tr><td>Удельный расход метанола</td><td class="n">−10…15%</td><td>М2: подача по расчётному запасу до гидратообразования вместо «запаса на всякий случай»</td></tr>
+        <tr><td>Колебания температуры НТС</td><td class="n">в 2–3 раза ниже</td><td>М1: многосвязное управление дросселированием и рекуперацией</td></tr>
+        <tr><td>Внеплановые остановы ГПА ДКС</td><td class="n">−20…30%</td><td>М3: ранние предупреждения по вибрации, температурам, газодинамике</td></tr>
+        <tr><td>Время подготовки нового оператора</td><td class="n">−30%</td><td>КТК на цифровом двойнике установки</td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+
+<section class="s" id="market">
+  <div class="wrap">
+    <div class="s-head"><div class="s-num">06 / РЫНОК</div><div><h2>Рынок и сегменты потребителей</h2>
+      <p>Российский рынок АСУ ТП почти утроился за пять лет, а требование 187-ФЗ формирует гарантированный спрос до 2030 г.</p></div></div>
+    <div class="body">
+      <p>Мировой рынок автоматизации нефтегазовой отрасли оценивается в 43,35 млрд $ в 2025 г. с ростом до 63,19 млрд $ к 2031 г. (6,48% в год)<a class="cite" href="#r7">[7]</a>. Российский рынок АСУ ТП вырос с 66,6 млрд руб. в 2020 г. до 184,5 млрд руб. в 2025 г.; десять ведущих компаний формируют 63,4% объёма<a class="cite" href="#r5">[5]</a>.</p>
+    </div>
+    <div class="charts">
+      <div class="chart"><h4>Рынок АСУ ТП России, млрд руб.<a class="cite" href="#r5">[5]</a></h4><div class="cv"><canvas id="c-market" role="img" aria-label="Рост рынка АСУ ТП России 2020–2025"></canvas></div></div>
+      <div class="chart"><h4>Ёмкость целевого сегмента 2027–2033, млрд руб. (оценка автора)</h4><div class="cv"><canvas id="c-sam" role="img" aria-label="Ёмкость сегментов"></canvas></div></div>
+    </div>
+    <h3>Сегменты</h3>
+    <div class="segs">
+      <div class="seg"><h4>1. Газодобывающие общества Группы Газпром (основной)</h4><dl><dt>Платёжеспособность</dt><dd>Высокая, бюджет инвестпрограммы</dd><dt>Цикл сделки</dt><dd>9–14 месяцев, ежегодные закупки</dd><dt>Объекты</dt><dd>50+ УКПГ и УППГ</dd><dt>Доп. услуги</dt><dd>Часто: сервис, КТК</dd></dl></div>
+      <div class="seg s2"><h4>2. Нефтяные компании: УПН, УПСВ, УКПГ</h4><dl><dt>Платёжеспособность</dt><dd>Высокая</dd><dt>Цикл сделки</dt><dd>12–18 месяцев, раз в 1–2 года</dd><dt>Объекты</dt><dd>≈80 установок в зоне досягаемости</dd><dt>Доп. услуги</dt><dd>Иногда</dd></dl></div>
+      <div class="seg s3"><h4>3. Независимые производители газа, ГПЗ, СПГ</h4><dl><dt>Платёжеспособность</dt><dd>Высокая</dd><dt>Цикл сделки</dt><dd>Разовые проекты, 12+ месяцев</dd><dt>Объекты</dt><dd>≈15</dd><dt>Доп. услуги</dt><dd>Иногда</dd></dl></div>
+      <div class="seg s4"><h4>4. Зарубежные заказчики ЕАЭС и СНГ</h4><dl><dt>Платёжеспособность</dt><dd>Средняя</dd><dt>Цикл сделки</dt><dd>18–24 месяца</dd><dt>Объекты</dt><dd>Единичные</dd><dt>Доп. услуги</dt><dd>Часто: обучение</dd></dl></div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="go">
+  <div class="wrap">
+    <div class="s-head"><div class="s-num">07 / ВЫХОД НА РЫНОК</div><div><h2>Мероприятия по выводу продукта</h2>
+      <p>B2B-продвижение строится на референсе пилота, отраслевых площадках и технических публикациях. Бюджет продвижения первого года — 18 млн руб.</p></div></div>
+    <ol class="steps">
+      <li><span>Разработка бизнес-плана и стратегии продукта, защита на НТС компании</span><span class="dt">01.11.26–29.01.27</span></li>
+      <li><span>Формирование проектного офиса «Промысел-И», найм ключевой команды</span><span class="dt">01.02.27–30.04.27</span></li>
+      <li><span>НИОКР: цифровой двойник НТС/УСК/УРМ, ядро СУУТП, модуль диагностики</span><span class="dt">01.03.27–31.03.28</span></li>
+      <li><span>Создание испытательного стенда, интеграция с ПТК «Поток-ДУ» и «Горизонт»</span><span class="dt">01.04.27–30.09.27</span></li>
+      <li><span>Договор на пилот с ООО «Газпром добыча Иркутск», аудит УКПГ-2</span><span class="dt">01.06.27–30.11.27</span></li>
+      <li><span>Работа модулей в советующем режиме на УКПГ-2</span><span class="dt">01.04.28–30.09.28</span></li>
+      <li><span>Приёмочные испытания, акт эффективности, сертификация СЗИ</span><span class="dt">01.10.28–31.12.28</span></li>
+      <li><span>Тиражирование: УКПГ Ковыкты и Чаяндинского НГКМ, выход в сегмент 2</span><span class="dt">с 01.2029</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="s" id="finance">
+  <div class="wrap">
+    <div class="s-head"><div class="s-num">08 / ФИНАНСЫ</div><div><h2>Финансовая модель 2027–2033</h2>
+      <p>Ставка дисконтирования 20%: ключевая ставка Банка России 14%<a class="cite" href="#r18">[18]</a> плюс премия за риск 6 п.п. Цены без НДС, налог на прибыль 25%.</p></div></div>
+    <div class="fin-k">
+      <div><b id="f-npv">—</b><span>NPV, млн руб.</span></div><div><b id="f-irr">—</b><span>IRR</span></div><div><b id="f-pi">—</b><span>PI</span></div><div><b id="f-pp">—</b><span>PP, лет</span></div><div><b id="f-dpp">—</b><span>DPP, лет</span></div>
+    </div>
+    <div class="charts">
+      <div class="chart"><h4>Выручка по направлениям, млн руб.</h4><div class="cv"><canvas id="c-rev" role="img" aria-label="Выручка по годам"></canvas></div></div>
+      <div class="chart"><h4>Денежные потоки, млн руб.</h4><div class="cv"><canvas id="c-cf" role="img" aria-label="Денежные потоки"></canvas></div></div>
+    </div>
+    <div class="sens" aria-label="Анализ чувствительности">
+      <label>Изменение выручки <output id="o-rev">0%</output><input type="range" id="s-rev" min="-30" max="20" step="5" value="0"></label>
+      <label>Изменение инвестиций <output id="o-cap">0%</output><input type="range" id="s-cap" min="-10" max="40" step="5" value="0"></label>
+      <label>Ставка дисконтирования <output id="o-r">20%</output><input type="range" id="s-r" min="14" max="30" step="1" value="20"></label>
+      <div class="res">NPV: <b id="o-npv">—</b> млн руб.</div>
+    </div>
+    <div class="tbl-wrap" style="margin-top:16px"><table id="t-fin"><thead></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<section class="s" id="risks">
+  <div class="wrap">
+    <div class="s-head"><div class="s-num">09 / РИСКИ</div><div><h2>Ключевые риски и ответные меры</h2></div></div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Риск</th><th>Вероятность</th><th>Меры</th></tr></thead>
+      <tbody>
+        <tr><td>Сокращение инвестпрограммы Газпрома: на 2026 г. утверждено 1,1 трлн руб., на 515 млрд меньше 2025 г.<a class="cite" href="#r4">[4]</a></td><td class="mid">Средняя</td><td>Упор на модернизацию действующих УКПГ (OPEX-эффект), выход в сегменты 2–3</td></tr>
+        <tr><td>Дефицит отечественной процессорной базы, удорожание компонентов (≈30%)<a class="cite" href="#r6">[6]</a></td><td class="mid">Средняя</td><td>Интеллектуальный контур — серверное ПО; ПТС — собственного производства компании</td></tr>
+        <tr><td>Нехватка кадров на стыке технологии и автоматизации<a class="cite" href="#r6">[6]</a></td><td class="mid">Средняя</td><td>Технологи-эксплуатационники в команде, кооперация с РГУ нефти и газа и МГТУ им. Н.Э. Баумана<a class="cite" href="#r2">[2]</a></td></tr>
+        <tr><td>Недостижение эффекта на пилоте</td><td class="yes">Низкая</td><td>Советующий режим, поэтапное включение контуров, независимая оценка эффекта</td></tr>
+        <tr><td>Киберугрозы для КИИ</td><td class="mid">Средняя</td><td>Однонаправленные шлюзы, сертифицированные СЗИ, раздельные контуры</td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong style="color:var(--ink)">Источники</strong>
+    <ol>
+      <li id="r1">Газстройпром. «Газпром автоматизация» получила статус ИТ-компании. <a href="https://gsprom.ru/en/media/news/korporativnye-novosti/gazprom-avtomatizatsiya-poluchila-status-it-kompanii/">gsprom.ru</a></li>
+      <li id="r2">ПАО «Газпром автоматизация». О компании. <a href="https://gpa.ru/about/company">gpa.ru/about/company</a></li>
+      <li id="r3">ПАО «Газпром автоматизация». Новость 02.02.2023. <a href="https://gpa.ru/news/news7">gpa.ru/news/news7</a></li>
+      <li id="r4">TAdviser. Газпром автоматизация (Газавтоматика). <a href="https://www.tadviser.ru/index.php/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F:%D0%93%D0%B0%D0%B7%D0%BF%D1%80%D0%BE%D0%BC_%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_(%D0%93%D0%B0%D0%B7%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)">tadviser.ru</a></li>
+      <li id="r5">INRESEARCH. Анализ рынка промышленной автоматизации (АСУ ТП). <a href="https://inresearch.ru/350/50/">inresearch.ru</a></li>
+      <li id="r6">СТА. Российская АСУ ТП: реальные внедрения есть, полноценного… (SMART OIL &amp; GAS, 2026). <a href="https://www.cta.ru/articles/online/183885/">cta.ru</a></li>
+      <li id="r7">Mordor Intelligence. Oil &amp; Gas Automation Market. <a href="https://www.mordorintelligence.com/industry-reports/oil-and-gas-automation-market">mordorintelligence.com</a></li>
+      <li id="r8">Yokogawa. Control system order for Yamal LNG. <a href="https://www.yokogawa.com/eu/news/press-releases/2014/2014-01-07/">yokogawa.com</a></li>
+      <li id="r9">Offshore Technology. BP awards Emerson contract for Shah Deniz Stage 2. <a href="https://www.offshore-technology.com/news/newsbp-awards-emerson-contract-for-shah-deniz-stage-2-project-azerbaijan-4431487/">offshore-technology.com</a></li>
+      <li id="r10">Emerson. First Caspian subsea project ahead of schedule, under budget (2019). <a href="https://www.emerson.com/en-us/news/automation/1907-bp-shah-deniz">emerson.com</a></li>
+      <li id="r11">Emerson. Emerson to automate BP-operated Shah Deniz Compression project (2026). <a href="https://www.emerson.com/en/corporate/news/2026/emerson-to-automate-bp-operated-shah-deniz-compression-project">emerson.com</a></li>
+      <li id="r12">ABB. Automation brings safety and sustainability for oil and gas. <a href="https://library.e.abb.com/public/1a20dfdc0f3d45028971d37459f99815/32-37%20m0064_EN_72dpi.pdf">library.e.abb.com</a></li>
+      <li id="r13">Aramco. How 70-year-old Abqaiq Plants transformed to become a 4IR leader. <a href="https://americas.aramco.com/en/news-media/elements-magazine/2023/how-70-year-old-abqaiq-plants-transformed-to-become-a-4ir-leader">aramco.com</a></li>
+      <li id="r14">ООО «Газпром добыча Иркутск». Корпоративный журнал № 3 (40), 2023. <a href="https://irkutsk-dobycha.gazprom.ru/d/journal/36/54/ig2023n03_v12(web)-2.pdf">irkutsk-dobycha.gazprom.ru</a></li>
+      <li id="r15">Википедия. Ковыктинское газоконденсатное месторождение. <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B2%D1%8B%D0%BA%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D0%B3%D0%B0%D0%B7%D0%BE%D0%BA%D0%BE%D0%BD%D0%B4%D0%B5%D0%BD%D1%81%D0%B0%D1%82%D0%BD%D0%BE%D0%B5_%D0%BC%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5">ru.wikipedia.org</a></li>
+      <li id="r16">Neftegaz.RU. Новый этап развития: записки о Ковыктинском месторождении. <a href="https://neftegaz.ru/news/Geological-exploration/483109-novyy-etap-razvitiya-zapiski-vpechatlitelnoy-zhurnalistki-neftegaz-ru-o-kovyktinskom-mestorozhdenii/">neftegaz.ru</a></li>
+      <li id="r17">КиберЛенинка. Технологические особенности стабилизации газового конденсата на месторождениях Восточной Сибири и Дальнего Востока. <a href="https://cyberleninka.ru/article/n/tehnologicheskie-osobennosti-stabilizatsii-gazovogo-kondensata-na-gazokondensatnyh-mestorozhdeniyah-vostochnoy-sibiri-i-dalnego">cyberleninka.ru</a></li>
+      <li id="r18">Банк России. Ключевая ставка. <a href="https://cbr.ru/press/keypr/">cbr.ru</a></li>
+    </ol>
+    <div class="who"><span>Автор проекта — Корытов Фёдор Андреевич · 2026</span><span>Расчётные показатели — оценка автора, не являются публичной офертой</span></div>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
